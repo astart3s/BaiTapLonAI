@@ -1,6 +1,9 @@
 # BaiTapLonAI
 Nhận diện khuôn mặt (+ Nhận diện cảm xúc khuôn mặt)
 
+tài liệu command git
+https://docs.github.com/en/get-started/quickstart/hello-world
+
 tài liệu sử dụng github trên vscode
 https://code.visualstudio.com/docs/editor/github
 

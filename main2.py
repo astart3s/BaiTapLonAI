@@ -15,7 +15,7 @@ while True:
         count = count + 1
     cv2.imshow('face', frame)
 
-    if cv2.waitKey(1) & 0xFF == ord('x'):
+    if cv2.waitKey(1) & 0xFF == ord('x'): # print x to exit
         break
 
 cam.release()

@@ -1,9 +1,9 @@
 import os, cv2
 
 detect_face = cv2.CascadeClassifier('haarcascade/haarcascade_frontalface_alt.xml')
-
 cam = cv2.VideoCapture(0)
 count = 0
+
 while True:
     OK, frame = cam.read()
     faces = detect_face.detectMultiScale(frame, 1.3, 5)

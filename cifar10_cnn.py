@@ -24,12 +24,15 @@ xtest = xtest/255
 ytrain, ytest = to_categorical(ytrain), to_categorical(ytest)
 
 # model_training = models.Sequential([
-#     layers.Flatten(input_shape= (32,32,3)), # 32x32, 3 layers
-#     layers.Dense(3000,activation= 'relu'),  #fully connective
-#     layers.Dense(1000,activation= 'relu'),
+#
+#
+#
+#         layers.Flatten(input_shape= (32,32,3)), # 32x32, 3 layers
+#     layers.Dense(200,activation= 'relu'),  #fully connective
+#     layers.Dense(100,activation= 'rxelu'),
 #     layers.Dense(10,activation='softmax'),
 # ])
-# # model_training.summary()
+# model_training.summary()
 # model_training.compile(optimizer= 'SGD', # update parameter
 #                        loss='categorical_crossentropy', #tinh mat mat
 #                        metrics='accuracy') # tinh do chinh xac

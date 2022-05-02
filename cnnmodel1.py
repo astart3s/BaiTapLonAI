@@ -73,19 +73,19 @@ classifier= models.Sequential([
 ])
 # model_training = models.Sequential([
 
-# classifier.compile(loss='categorical_crossentropy', optimizer = 'adam', metrics=["accuracy"])
-#
-#
-# classifier.fit(
-#                     training_set,
-#                     # steps_per_epoch=3,
-#                      epochs=16,
-#                     validation_data=test_set
-#                     # validation_steps=10
-# )
-# classifier.save('model_complete')
+classifier.compile(loss='categorical_crossentropy', optimizer = 'adam', metrics=["accuracy"])
+
+
+classifier.fit(
+                    training_set,
+                    # steps_per_epoch=3,
+                     epochs=16,
+                    validation_data=test_set
+                    # validation_steps=10
+)
+classifier.save('model_complete')
 import matplotlib
-test_model = models.load_model('model_complete')
+# test_model = models.load_model('model_complete')
 
 
 
@@ -157,7 +157,7 @@ def detect(img_path):
     while cv2.waitKey(1) & 0xFF != ord('q'):
         cv2.imshow('face', img_path)
         # milisecond;  0xFF = exit
-detect(img_path)
+# detect(img_path)
 
 
 # for i in os.listdir(image_path_parent):
